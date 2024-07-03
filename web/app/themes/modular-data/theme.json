@@ -73,6 +73,13 @@
 			]
 		},
 		"typography": {
+			"customFontSize": false,
+			"dropCap": false,
+			"fluid": {
+				"maxViewportWidth": "1600px",
+				"minFontSize": "1.125rem",
+				"minViewportWidth": "320px"
+			},
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -132,6 +139,82 @@
 					"name": "DM Serif Text",
 					"slug": "dm-serif-text"
 				}
+			],
+			"fontSizes": [
+				{
+					"name": "2X Small",
+					"size": "0.75rem",
+					"slug": "xxs"
+				},
+				{
+					"name": "X Small",
+					"size": "0.875rem",
+					"slug": "xs"
+				},
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "sm"
+				},
+				{
+					"name": "Base",
+					"size": "1.125rem",
+					"slug": "base"
+				},
+				{
+					"fluid": {
+						"max": "1.25rem",
+						"min": "1.125rem"
+					},
+					"name": "Medium",
+					"size": "1.188rem",
+					"slug": "md"
+				},
+				{
+					"fluid": {
+						"max": "1.5rem",
+						"min": "1.25rem"
+					},
+					"name": "Large",
+					"size": "1.25rem",
+					"slug": "lg"
+				},
+				{
+					"fluid": {
+						"max": "1.875rem",
+						"min": "1.5rem"
+					},
+					"name": "X Large",
+					"size": "1.5rem",
+					"slug": "xl"
+				},
+				{
+					"fluid": {
+						"max": "2.25rem",
+						"min": "1.875rem"
+					},
+					"name": "2X Large",
+					"size": "1.875rem",
+					"slug": "xxl"
+				},
+				{
+					"fluid": {
+						"max": "3rem",
+						"min": "2.25rem"
+					},
+					"name": "3X Large",
+					"size": "2.25rem",
+					"slug": "xxxl"
+				},
+				{
+					"fluid": {
+						"max": "3.75rem",
+						"min": "3rem"
+					},
+					"name": "4X Large",
+					"size": "3rem",
+					"slug": "xxxxl"
+				}
 			]
 		},
 		"useRootPaddingAwareAlignments": true
@@ -151,6 +234,10 @@
 					"text": "var(--wp--preset--color--custom-black)"
 				}
 			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--dm-sans)",
+			"fontSize": "var(--wp--preset--font-size--base)"
 		}
 	},
 	"templateParts": [
