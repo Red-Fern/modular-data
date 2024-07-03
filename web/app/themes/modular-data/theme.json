@@ -125,7 +125,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhS2f3ZGMZpg.woff2"
+								"file:./resources/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhS2f3ZGMZpg.woff2"
 							]
 						},
 						{
@@ -133,7 +133,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "500",
 							"src": [
-								"file:./assets/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhS2f3ZGMZpg.woff2"
+								"file:./resources/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhS2f3ZGMZpg.woff2"
 							]
 						}
 					],
@@ -148,7 +148,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "300",
 							"src": [
-								"file:./assets/fonts/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2"
+								"file:./resources/fonts/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2"
 							]
 						}
 					],
@@ -163,7 +163,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/rnCu-xZa_krGokauCeNq1wWyafaPXHIJErY.woff2"
+								"file:./resources/fonts/rnCu-xZa_krGokauCeNq1wWyafaPXHIJErY.woff2"
 							]
 						}
 					],
