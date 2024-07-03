@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    p:first-child {
+		@apply mt-0;
+	}
+	p:last-child {
+		@apply mb-0;
+	}
+    b, strong {
+        @apply font-medium;
+    }
+}
+
+/******** Preflight ********/
+@import url("./preflight.css");
+
+/******** Vue and Alpine ********/
+[v-cloak],
+[x-cloak] {
+    @apply !hidden;
+}
+
+/******** Containers ********/
+
+/* Match tailwind and WordPress containers */
+.container {
+    @apply mx-auto px-sm;
+    max-width: calc(var(--wp--style--global--content-size) + (var(--wp--preset--spacing--sm) * 2));
+}
+
+/******** Blocks *********/
+
+/* Typography */
+[class*="space-y"] :is(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: 0;
+}
