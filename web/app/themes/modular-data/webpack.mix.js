@@ -8,6 +8,8 @@ mix
     ])
 
     .js('resources/js/main.js', './assets/js')
+    
+    .js('resources/js/gutenberg.js', './assets/js')
 
     .copyDirectory('resources/images', 'assets/images')
 
