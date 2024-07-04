@@ -10,6 +10,7 @@
     "block:start": "wp-scripts start --webpack-src-dir=resources/gutenberg --output-path=assets/gutenberg --experimental-modules"
   },
   "devDependencies": {
+    "@wordpress/scripts": "^27.9.0",
     "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.49",
