@@ -37,3 +37,17 @@
 [class*="space-y"] :is(h1, h2, h3, h4, h5, h6) {
     margin-bottom: 0;
 }
+
+/******** Template Parts ********/
+
+/* Header */
+
+header.wp-block-template-part .wp-block-buttons {
+    @apply max-md:hidden;
+}
+
+/* Footer */
+
+footer.wp-block-template-part .items-justified-right {
+    @apply max-md:justify-start;
+}
