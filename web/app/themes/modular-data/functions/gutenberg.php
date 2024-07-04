@@ -5,6 +5,7 @@ namespace RFOrigin;
 class Gutenberg
 {
     protected static array $blocks = [
+        'modular-data/copyright-notice',
     ];
 
     public static function init()
