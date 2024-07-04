@@ -35,7 +35,7 @@
 
 /* Typography */
 [class*="space-y"] :is(h1, h2, h3, h4, h5, h6) {
-    margin-bottom: 0;
+    @apply mb-0;
 }
 
 /******** Template Parts ********/
@@ -48,6 +48,10 @@ header.wp-block-template-part .wp-block-buttons {
 
 /* Footer */
 
+footer.wp-block-template-part > .wp-block-group {
+    padding-top: clamp(3.75rem, 3.451rem + 1.493vw, 5rem); /* 80px/60px */
+    padding-bottom: clamp(6.25rem, 5.802rem + 2.239vw, 8.125rem); /* 130px/100px */
+}
 footer.wp-block-template-part .items-justified-right {
     @apply max-md:justify-start;
 }
