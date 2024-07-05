@@ -1,9 +1,9 @@
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save({
 	attributes: {
-		suffix,
-		prefix
+		prefix,
+		suffix
 	}
 }) {
 	const blockProps = useBlockProps.save();

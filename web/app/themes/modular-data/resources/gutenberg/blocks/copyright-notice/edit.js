@@ -7,7 +7,7 @@ export default function Edit({
 		prefix,
 		suffix
 	},
-	setAttributes,
+	setAttributes
 }) {
 	const blockProps = useBlockProps();
 	
