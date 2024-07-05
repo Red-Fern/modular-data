@@ -1,0 +1,12 @@
+{
+    "name": "acf/mega-menu",
+    "title": "Mega Menu",
+    "description": "Build a mega menu.",
+    "category": "theme",
+    "icon": "menu",
+    "keywords": ["mega", "menu"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "mega-menu.php"
+    }
+}

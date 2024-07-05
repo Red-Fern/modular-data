@@ -30,6 +30,9 @@
     @apply mx-auto px-sm;
     max-width: calc(var(--wp--style--global--content-size) + (var(--wp--preset--spacing--sm) * 2));
 }
+.container.wide {
+    max-width: calc(var(--wp--style--global--wide-size) + (var(--wp--preset--spacing--sm) * 2));
+}
 
 /******** Blocks *********/
 
@@ -41,17 +44,52 @@
 /******** Template Parts ********/
 
 /* Header */
-
+.site-logo {
+    @apply max-lg:max-w-[200px];
+}
+header.wp-block-template-part {
+    @apply relative;
+}
 header.wp-block-template-part .wp-block-buttons {
-    @apply max-md:hidden;
+    @apply shrink-0 max-md:hidden;
+}
+header.wp-block-template-part.menu-open {
+    @apply bg-mid-grey;
 }
 
 /* Footer */
-
 footer.wp-block-template-part > .wp-block-group {
     padding-top: clamp(3.75rem, 3.451rem + 1.493vw, 5rem); /* 80px/60px */
     padding-bottom: clamp(6.25rem, 5.802rem + 2.239vw, 8.125rem); /* 130px/100px */
 }
+footer.wp-block-template-part .wp-block-columns:not(.is-not-stacked-on-mobile) {
+    @apply max-lg:!flex-wrap;
+}
+footer.wp-block-template-part .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+    @apply max-lg:!basis-full;
+}
 footer.wp-block-template-part .items-justified-right {
-    @apply max-md:justify-start;
+    @apply max-lg:justify-start;
+}
+
+/******** Editor ********/
+.block-editor .edit-post-sidebar,
+.block-editor-page .interface-complementary-area {
+    @apply md:w-[380px];
+}
+.block-editor .edit-post-sidebar .acf-table .acf-row-handle,
+.block-editor-page .interface-complementary-area .acf-table .acf-row-handle {
+    @apply p-0;
+}
+.block-editor .edit-post-sidebar .acf-fields > .acf-field,
+.block-editor-page .interface-complementary-area .acf-fields > .acf-field {
+    @apply p-2.5;
+}
+.block-editor .edit-post-sidebar .acf-table .acf-link .link-wrap,
+.block-editor-page .interface-complementary-area .acf-table .acf-link .link-wrap {
+    @apply leading-normal;
+}
+.block-editor .edit-post-sidebar .acf-table .acf-link .link-wrap .link-title, 
+.block-editor-page .interface-complementary-area .acf-table .acf-link .link-wrap .link-title {
+    @apply p-0;
 }
