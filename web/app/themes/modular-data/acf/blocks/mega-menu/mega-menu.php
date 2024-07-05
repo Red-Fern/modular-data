@@ -32,7 +32,7 @@
                         <!-- Mega menu -->
                         <?php if ($menu_item['child_links']): ?>
                             <div
-                                class="w-full bg-light-grey text-md overflow-x-clip z-10 transition duration-500 | lg:absolute lg:top-full lg:left-0 lg:py-lg lg:bg-light-grey lg:shadow-lg"
+                                class="w-full bg-light-grey text-black text-md overflow-x-clip z-10 transition duration-500 | lg:absolute lg:top-full lg:left-0 lg:py-lg lg:bg-light-grey lg:shadow-lg"
                                 x-cloak
                                 x-show="showing"
                                 @click.away="hide"

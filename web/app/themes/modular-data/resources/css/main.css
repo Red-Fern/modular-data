@@ -42,7 +42,6 @@
 }
 
 /* Images */
-
 .svg-wrapper svg {
     @apply max-w-full;
 }
@@ -54,13 +53,16 @@
     @apply max-lg:max-w-[200px];
 }
 header.wp-block-template-part {
-    @apply relative;
+    @apply relative lg:transition-colors lg:duration-300;
 }
 header.wp-block-template-part .wp-block-buttons {
     @apply shrink-0 max-md:hidden;
 }
 header.wp-block-template-part.menu-open {
-    @apply bg-mid-grey;
+    @apply lg:bg-black lg:text-white;
+}
+header.wp-block-template-part.menu-open a {
+    @apply lg:text-white;
 }
 
 /* Footer */
