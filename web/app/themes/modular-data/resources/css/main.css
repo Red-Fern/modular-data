@@ -41,6 +41,12 @@
     @apply mb-0;
 }
 
+/* Images */
+
+.svg-wrapper svg {
+    @apply max-w-full;
+}
+
 /******** Template Parts ********/
 
 /* Header */

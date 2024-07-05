@@ -6,6 +6,7 @@ class Gutenberg
 {
     protected static array $blocks = [
         'modular-data/copyright-notice',
+        'modular-data/svg',
     ];
 
     public static function init()

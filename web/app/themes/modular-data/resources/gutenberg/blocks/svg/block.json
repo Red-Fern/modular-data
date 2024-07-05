@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "modular-data/svg",
+	"version": "0.1.0",
+	"title": "SVG",
+	"category": "widgets",
+	"icon": "format-image",
+	"description": "Display an inline SVG.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"svgMarkup": {
+			"type": "string"
+		}
+	},
+	"textdomain": "svg",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"editorStyle": "file:./index.css",
+	"viewScript": "file:./view.js"
+}
