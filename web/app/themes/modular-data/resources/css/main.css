@@ -89,7 +89,7 @@ header.wp-block-template-part {
 header.wp-block-template-part.menu-open {
     @apply xl:bg-black xl:text-white;
 }
-header.wp-block-template-part.menu-open a {
+header.wp-block-template-part.menu-open .link-item {
     @apply xl:text-white;
 }
 header.wp-block-template-part > .wp-block-group > .wp-block-group {
