@@ -49,6 +49,31 @@
     @apply max-w-full h-auto;
 }
 
+/* Buttons */
+.wp-block-button > .wp-block-button__link {
+    @apply flex items-center gap-xs border-light-grey bg-white text-black text-left transition duration-300 ease-in-out;
+}
+.wp-block-button > .wp-block-button__link::after {
+    @apply content-[''] shrink-0 inline-block w-10 h-10 bg-purple transition duration-300 ease-in-out;
+    mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MSIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjAgNDAuNWMxMS4wNDYgMCAyMC04Ljk1NCAyMC0yMFMzMS4wNDYuNSAyMCAuNSAwIDkuNDU0IDAgMjAuNXM4Ljk1NCAyMCAyMCAyMFptLTgtMTloMTIuMTc1bC01LjYgNS42TDIwIDI4LjVsOC04LTgtOC0xLjQyNSAxLjQgNS42IDUuNkgxMnYyWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+") no-repeat 50% 50%;}
+.wp-block-button.is-style-white-outline > .wp-block-button__link {
+    @apply border-white bg-transparent text-white;
+}
+.wp-block-button.is-style-white-outline > .wp-block-button__link::after {
+    @apply bg-white;
+}
+.wp-block-button > .wp-block-button__link:hover {
+    @apply border-light-grey bg-white text-black;
+    box-shadow: 0px 4px 10px 0px rgba(137, 128, 245, 0.80);
+}   
+.wp-block-button > .wp-block-button__link:hover::after {
+    @apply bg-black;
+}
+.wp-block-button.is-style-white-outline > .wp-block-button__link:hover {
+    @apply shadow-none border-white;
+}
+
+
 /******** Template Parts ********/
 
 /* Header */
