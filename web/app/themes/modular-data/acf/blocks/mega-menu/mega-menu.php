@@ -66,7 +66,7 @@
                                             <?php foreach ($menu_item['child_links'] as $child_item): ?>
                                                 <?php if ($child_item['link']): ?>
                                                     <li class="border-b border-mid-grey <?php echo count($menu_item['child_links']) > 3 ? 'my-class' : ''; ?> | xl:border-0">
-                                                        <a href="<?php echo $child_item['link']['url']; ?>" class="block py-4 text-2xl | xl:p-0 xl:text-white xl:text-xl">
+                                                        <a href="<?php echo $child_item['link']['url']; ?>" class="arrow-link block py-4 text-2xl | max-xl:after:hidden | xl:p-0 xl:text-white xl:text-xl">
                                                             <?php echo $child_item['link']['title']; ?>
                                                         </a>
                                                     </li>
