@@ -10,7 +10,7 @@ export default function save({
 
 	return (
 		<div { ...blockProps }>
-			<div class="flex gap-[5px]">
+			<div className="flex gap-[5px]">
 				{ prefix && <span>{prefix}</span> }
 				<span>{ new Date().getFullYear() }</span>
 				{ suffix && <span>{suffix}</span> }

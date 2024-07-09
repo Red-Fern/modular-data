@@ -37,7 +37,7 @@ export default function Edit({
 			</InspectorControls>
 
 			{ svgMarkup && (
-				<div class="svg-wrapper" dangerouslySetInnerHTML={{ __html: svgMarkup }} />
+				<div className="svg-wrapper" dangerouslySetInnerHTML={{ __html: svgMarkup }} />
 			)}
 		</div>
 	);

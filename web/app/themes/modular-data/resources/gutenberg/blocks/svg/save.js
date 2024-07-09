@@ -10,7 +10,7 @@ export default function save({
 	return (
 		<div { ...blockProps }>
 			{ svgMarkup && (
-				<div class="svg-wrapper" dangerouslySetInnerHTML={{ __html: svgMarkup }} />
+				<div className="svg-wrapper" dangerouslySetInnerHTML={{ __html: svgMarkup }} />
 			)}
 		</div>
 	);
