@@ -39,6 +39,6 @@ export default (hasItems = false) => ({
         }
     },
     isDesktop() {
-        return window.innerWidth > 1023;
+        return window.innerWidth > 1279;
     }
 });

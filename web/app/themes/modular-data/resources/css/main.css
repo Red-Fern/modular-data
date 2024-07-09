@@ -22,6 +22,9 @@
 [x-cloak] {
     @apply !hidden;
 }
+[x-cloak="mobile"] {
+    @apply !hidden lg:!block;
+}
 
 /******** Containers ********/
 
@@ -43,26 +46,52 @@
 
 /* Images */
 .svg-wrapper svg {
-    @apply max-w-full;
+    @apply max-w-full h-auto;
 }
 
 /******** Template Parts ********/
 
 /* Header */
 .site-logo {
-    @apply max-lg:max-w-[200px];
+    @apply max-w-[200px] xl:max-w-[180px] 2xl:max-w-full;
+}
+.header-cta {
+    @apply shrink-0 max-xl:!hidden;
 }
 header.wp-block-template-part {
-    @apply relative lg:transition-colors lg:duration-300;
-}
-header.wp-block-template-part .wp-block-buttons {
-    @apply shrink-0 max-md:hidden;
+    @apply relative xl:transition-colors xl:duration-300;
 }
 header.wp-block-template-part.menu-open {
-    @apply lg:bg-black lg:text-white;
+    @apply xl:bg-black xl:text-white;
 }
 header.wp-block-template-part.menu-open a {
-    @apply lg:text-white;
+    @apply xl:text-white;
+}
+header.wp-block-template-part > .wp-block-group > .wp-block-group {
+    @apply max-xl:px-6 max-xl:py-5;
+}
+header.wp-block-template-part > .wp-block-group > .wp-block-group::before {
+    @apply content-[''] absolute top-5 left-6 w-[calc(100%-(theme(space.6)*2))] h-[calc(100%-(theme(space.5)*2))] bg-white rounded-[50px] z-20 xl:hidden;
+}
+header.wp-block-template-part > .wp-block-group > .wp-block-group .site-logo {
+    @apply relative z-20;
+}
+header.wp-block-template-part .menu-bg {
+    background-image: url('../images/mob-menu-bg.png');
+    @apply bg-no-repeat bg-cover xl:bg-none;
+}
+
+/* Mega Menu */
+.mega-menu-block .link-item::before {
+    @apply absolute bottom-2.5 left-2 w-0 h-px bg-purple transition-[width] duration-300 xl:content-[''] 2xl:bottom-3.5 2xl:left-3;
+}
+.mega-menu-block .link-item:hover::before,
+.mega-menu-block .link-item.has-items.active::before {
+    @apply w-[calc(100%-theme(space.2)*2)] 2xl:w-[calc(100%-theme(space.3)*2)];
+}
+.mega-menu-block .link-item.has-items:hover svg,
+.mega-menu-block .link-item.has-items.active svg {
+    @apply text-purple;
 }
 
 /* Footer */

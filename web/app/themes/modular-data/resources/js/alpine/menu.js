@@ -24,6 +24,6 @@ export default () => ({
         document.querySelector('body').classList.remove('overflow-hidden');
     },
     isDesktop() {
-        return window.innerWidth > 1023;
+        return window.innerWidth > 1279;
     }
 })
