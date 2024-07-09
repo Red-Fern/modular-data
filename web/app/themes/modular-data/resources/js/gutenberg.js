@@ -13,6 +13,11 @@ wp.blocks.registerBlockStyle('core/button', {
     label: 'White Outline'
 });
 
+wp.blocks.registerBlockStyle('core/button', {
+    name: 'arrow',
+    label: 'Arrow'
+});
+
 // Unregister default blocks and styles
 
 wp.domReady( () => {
