@@ -18,6 +18,13 @@ wp.blocks.registerBlockStyle('core/button', {
     label: 'Arrow'
 });
 
+/* Image */
+
+wp.blocks.registerBlockStyle('core/image', {
+    name: 'break-out',
+    label: 'Break Out'
+});
+
 // Unregister default blocks and styles
 
 wp.domReady( () => {

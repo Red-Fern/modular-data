@@ -103,6 +103,14 @@ body {
     @apply bg-left;
 }
 
+/* 50/50 */
+.wp-block-image.is-style-break-out {
+    @apply relative;
+}
+.wp-block-image.is-style-break-out img {
+    @apply w-full object-cover;
+}
+
 /******** Template Parts ********/
 
 /* Header */
